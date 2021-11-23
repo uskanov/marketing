@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik';
+    background: #E5E5E5;
+}
+
+.container {
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ========================MAIN======================= */
+
+.main {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.intro {
+    background: url(../images/Фон.png) white center/cover no-repeat;
+    height: 500px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.intro_content {
+    width: 332px;
+    margin-left: 62px;
+}
+
+.intro_title {
+    font-size: 50px;
+    color: #464748;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.intro_title::before {
+    content: "";
+    height: 52px;
+    width: 100px;
+    background: #3FA5D5;
+    display: block;
+    position: absolute;
+    top: 33px;
+    z-index: -1;
+}
+
+.intro_text {
+    color: #696868;
+    line-height: 19px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.intro_link {
+    background: #3FA5D5;
+    width: 211px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ===========================SIDEBAR=========================== */
+
+.sidebar {
+    position: fixed;
+    background: white;
+    width: 100px;
+    height: 100%;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow: hidden;
+    left: -100px;
+}
+
+.sidebar:hover {
+    width: 235px;
+    left: 0px;
+}
+
+.sidebar_logo {
+    font-size: 50px;
+    width: 70px;
+    text-align: center;
+    color: #2A86B1;
+}
+
+.sidebar_logo_icon::after {
+    color: #3FA5D5;
+    opacity: 1;
+}
+
+.sidebar_list {
+    list-style: none;
+    width: 205px;
+}
+
+.sidebar_link {
+    color: #939393;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar_link:hover {
+    color: #2A86B1;
+}
+
+.sidebar_icon {
+    font-size: 30px;
+    text-align: center;
+    width: 70px;
+    margin-right: 15px;
+}
+
+.sidebar_user {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.sidebar_text {
+    font-size: 18px;
+}
+
+.service {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_item {
+    width: 255px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px 20px 20px;
+    text-align: center;
+}
+
+.service_title {
+    text-align: center;
+    font-size: 20px;
+    color: #2A86B1;
+    height: 47px;
+}
+
+.service_icon {
+    color: #3FA5D5;
+    font-size: 90px;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+.service_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3FA5D5;
+    border-radius: 30px;
+    width: 100%;
+    height: 33px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar_hover {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+}
+
+.sidebar_hover:hover+.sidebar {
+    left: 0;
+}
+
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.left{
+    width: 825px;
+}
+
+.information_title{
+    color: #686868;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.left_text{
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: justify;
+    color: #545454;
+    line-height: 19px;
+    margin-bottom: 15px;
+}
+
+.right{
+    width: 255px;
+}
+
+.right_item{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.right_image{
+    margin-right: 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.right_title{
+    color: #323232;
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.right_text{
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: 300;
+}
+
+.footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #3FA5D5;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_title{
+    color: white;
+    font-size: 50px;
+}
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer_tel{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.footer_mail{
+    text-decoration: none;
+    color: white;
+}
